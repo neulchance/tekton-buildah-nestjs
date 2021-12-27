@@ -2,7 +2,7 @@ FROM node:16 AS builder
 WORKDIR /app
 COPY . .
 RUN yarn
-RUN yarn build facade
+RUN yarn build
 
 FROM node:16-alpine
 WORKDIR /app
